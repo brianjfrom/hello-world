@@ -5,6 +5,35 @@
     <title>Hello World!</title>
     <link href="https://fonts.googleapis.com/css?family=Lora|Oswald" rel="stylesheet">
     <style>
+      .topic {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: "logo . right";
+        grid-gap: none;
+      }
+      .topic > ul {
+        grid-area: right;
+      }
+      .logo{
+        grid-area: logo;
+      }
+      ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+      }
+      li {
+        list-style-type: none;
+        display: inline;
+        padding: 10px;
+        border-left:1px solid black;
+      }
+      .topic a {
+        text-decoration: none;
+        color: black;
+      }
       .container {
         text-align: center;
         margin: 0;
@@ -25,6 +54,20 @@
     </style>
   </head>
   <body style="background: rgb(197, 214, 230)">
+    <div class="topbar">
+      <div class="topic">
+        <div class="logo"><img src=logo.png alt="logo" style="width: 50px; hight: auto;">
+
+        </div>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li> <a href="#">About</a> </li>
+          <li> <a href="#">Contact</a> </li>
+        </ul>
+
+      </div>
+    </div>
+
     <div class="container">
       <div class="header"><h1>Hello World!</h1></div>
       <div class="line"><p>This is my first attempt at posting something.</p></div>
