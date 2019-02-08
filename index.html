@@ -5,6 +5,10 @@
     <title>Hello World!</title>
     <link href="https://fonts.googleapis.com/css?family=Lora|Oswald" rel="stylesheet">
     <style>
+      body {
+        background-image: url(https://images.unsplash.com/photo-1506269351850-0428eaed2193?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+        background-size: 100%;
+      }
       .topic {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -16,6 +20,7 @@
       }
       .logo{
         grid-area: logo;
+        color: white;
       }
       ul {
         margin: 0;
@@ -28,11 +33,11 @@
         list-style-type: none;
         display: inline;
         padding: 10px;
-        border-left:1px solid black;
+        border-left:1px solid white;
       }
       .topic a {
         text-decoration: none;
-        color: black;
+        color: white;
       }
       .container {
         text-align: center;
@@ -50,10 +55,13 @@
       }
       .line {
         font-family: Oswald;
+        color: white;
+        text-shadow: 1px 1px 1px black
       }
     </style>
   </head>
-  <body style="background: rgb(197, 214, 230)">
+<!--  <body style="background: rgb(197, 214, 230)" > -->
+      <body>
     <div class="topbar">
       <div class="topic">
         <div class="logo"><img src=logo.png alt="logo" style="width: 50px; hight: auto;">
