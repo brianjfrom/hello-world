@@ -3,30 +3,30 @@
   <head>
     <meta charset="utf-8">
     <title>Hello World!</title>
+    <link href="https://fonts.googleapis.com/css?family=Lora|Oswald" rel="stylesheet">
     <style>
-
-
-      h1 {
-        background: lightblue;
+      .container {
         text-align: center;
-        position:  absolute;
-        top: 40%;
-        left: 45%;
-        border: 2px solid black;
-        padding: 15px
-      }
-      p {
+        margin: 0;
+        padding: 0;
         position: absolute;
-        text-align: center;
-        top: 50%;
-        left: 39.5%;
-        font-size: 1.5em;
-
+        top: 40%;
+        left: 42%;
+      }
+      .header {
+        border: 2px solid black;
+        background-color: lightblue;
+        font-family: lora;
+      }
+      .line {
+        font-family: Oswald;
       }
     </style>
   </head>
   <body style="background: rgb(197, 214, 230)">
-    <h1>Hello World!</h1>
-    <p>This is my first attempt at posting something.</p>
+    <div class="container">
+      <div class="header"><h1>Hello World!</h1></div>
+      <div class="line"><p>This is my first attempt at posting something.</p></div>
+    </div>
   </body>
 </html>
